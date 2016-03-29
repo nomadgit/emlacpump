@@ -102,7 +102,7 @@
                 <div class="right"><span class="supplier supplierR">R</span>{{getDailyTotal(feedingDay,&apos;R&apos;)| number:0}}&#xA0;min</div>
               </div>
               <div ng-show="feedingDay &amp;&amp; feedingDay.length" ng-repeat="feeding in feedingDay"><ng-include src="&apos;list.html&apos;"></ng-include></div>
-              <div ng-show="!feedingDay || !feedingDay.length" class="noFeedings">No feedings this day</div>
+              <div ng-show="!feedingDay || !feedingDay.length" class="noFeedings">Tiada susu dipam hari ini.</div>
             </ion-list>
           </ion-slide>
           <ion-slide class="feedingSlide"> <!-- today is a bit of a special case -->

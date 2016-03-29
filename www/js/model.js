@@ -18,9 +18,9 @@
  */
 var BASE_URL = "http://mysterious-lake-1956.herokuapp.com"
 var DATE_FORMAT = "yyyy-MM-dd HH:mm";
-var MAX_TIME_MINUTES = 60;
+var MAX_TIME_MINUTES = 1440;
 var STOP_SIGN="<i class='ion-stop'></i>";
-var VIBRATE_INTERVAL = 10 * 60 * 1000;
+var VIBRATE_INTERVAL = 180 * 60 * 1000;
 var HISTORY_DAYS=14;
 
 var TABLE_NAME_DEMO = "FEEDINGS_DEMO";

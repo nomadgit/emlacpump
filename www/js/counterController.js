@@ -65,12 +65,12 @@ var CounterCtrl = function($scope, $timeout, $ionicPopup) {
   $scope.bottleFeeding = function() {
     $scope.bottleFeedingModel = { volume: 15 }
     var editFeedingPopup = $ionicPopup.show({
-      title: 'New bottle feeding',
+      title: 'Kuantiti Susu Ibu',
       templateUrl: 'newBottleFeeding.html',
       scope: $scope,
       buttons: [
-        { text: 'Cancel' },
-        { text: 'Add', 
+        { text: 'Batal' },
+        { text: 'Tambah', 
           onTap: function (e) {
             var feeding = { supplier: "B", startTime: new Date().getTime(), duration: 0, volume: 10*$scope.bottleFeedingModel.volume, ongoing: false }
             storage.storeAndSync(feeding);
