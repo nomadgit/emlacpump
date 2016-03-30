@@ -38,13 +38,17 @@ var ChartsController = function($scope) {
     percentage.update(function() {$scope.$apply();});
   }
 
-  $scope.quantityTimes = [ {key: 1,  name: "1 day"},
-                           {key: 2, name: "2 days"},
-                           {key: 3, name: "3 days"},
-                           {key: 4, name: "4 days"},
-						   {key: 5, name: "5 days"},
-						   {key: 6, name: "6 days"},
-						   {key: 7, name: "7 days"}]
+  $scope.quantityTimes = [ {key: 1,  name: "1 Hari"},
+                           {key: 2, name: "2 Hari"},
+                           {key: 3, name: "3 Hari"},
+                           {key: 4, name: "4 Hari"},
+						   {key: 5, name: "5 Hari"},
+						   {key: 6, name: "6 Hari"},
+						   {key: 7, name: "Seminggu"},
+						   {key: 14, name: "2 Minggu"},
+						   {key: 21, name: "3 Minggu"},
+						   {key: 30, name: "Sebulan"}]
+						 
   $scope.quantityTime = $scope.quantityTimes[1];
   $scope.updateQuantityTime = function(newquantityTime) {
     $scope.quantityTime = newquantityTime;

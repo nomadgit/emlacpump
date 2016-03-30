@@ -507,7 +507,7 @@ input[type="range"]::-webkit-slider-thumb:before {
 }
 #infoTextBottle {
   position: absolute;
-  top: 427px;
+  top: 447px;
   left: -34px;
   font-size: 24px;
   width: 80px;
@@ -519,7 +519,7 @@ input[type="range"]::-webkit-slider-thumb:before {
   left: 85px;
   width: 78px;
   text-align: center;
-}
+} 
 #infoStartFeeding {
   position: absolute;
   width: 300px;

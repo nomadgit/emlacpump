@@ -218,7 +218,7 @@ var percentage = {
           percentage.chartData.labels.push('');
         }
       }
-      percentage.chartData.labels.push('Today');
+      percentage.chartData.labels.push('Hari Ini');
       var day = 0;
       for(var i=0; i<rows.length; i++) {
         day = percentage.nofDaysHistory - util.getDaysFromToday(parseInt(rows[i].startTime));

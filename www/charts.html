@@ -1,6 +1,6 @@
 <div class="modal">
   <ion-header-bar>
-    <h1 class="title">Statistik Mengepam</h1>
+    <h1 class="title">Graf Kuantiti Susu Ibu</h1>
   </ion-header-bar>
   <ion-content ng-controller="ChartsController" id="ChartsController" class="Charts">
 
@@ -58,20 +58,20 @@
             </select>
             <i class="ion-android-dropdown"></i>
           </div>
-          <h3>Kuantiti Mengepam</h3>
-          <p class="chartDescText">Graf menunjukkan jumlah susu yang telah dipam setiap hari.</p>
+          <h3>Kuantiti Susu Ibu</h3>
+          <p class="chartDescText">Graf menunjukkan jumlah susu ibu yang telah dipam setiap hari.</p>
         </div>
         
         <hr>
         <div class="chartDescContent">
           <div class="chartDescHead">Hari Ini</div>
-          <span class="tag"><span class="quantity leftColor">{{quantityEndDistro('Breast') | number:0}}</span>Masa mengepam (min)</span>
-          <span class="tag"><span class="quantity bottleColor">{{quantityEndDistro('Bottle')}}</span>Susu dipam (ml)</span>
+          <span class="tag"><span class="quantity leftColor">{{quantityEndDistro('Breast') | number:0}}</span>Masa Susu dipam (min)</span>
+          <span class="tag"><span class="quantity bottleColor">{{quantityEndDistro('Bottle')}}</span>Kuantiti Susu dipam (ml)</span>
         </div>
         <div class="chartDescContent" ng-show="quantityHasDataAtBegin()">
-          <div class="chartDescHead">{{quantityTime.name}} lalu</div>
-          <span class="tag"><span class="quantity leftColor">{{quantityBeginDistro('Breast') | number:0}}</span>Masa mengepam (min)</span>
-          <span class="tag"><span class="quantity bottleColor">{{quantityBeginDistro('Bottle')}}</span>Susu dipam (ml)</span>
+          <div class="chartDescHead">{{quantityTime.name}} lepas</div>
+          <span class="tag"><span class="quantity leftColor">{{quantityBeginDistro('Breast') | number:0}}</span>Masa Susu dipam (min)</span>
+          <span class="tag"><span class="quantity bottleColor">{{quantityBeginDistro('Bottle')}}</span>Kuantiti Susu dipam (ml)</span>
         </div>
 
       </ion-slide>
@@ -114,7 +114,7 @@
         
         <hr>
         <div class="chartDescContent">
-          <div class="chartDescHead">Today</div>
+          <div class="chartDescHead">Hari Ini</div>
           <span class="tag"><span class="leftColor">{{percentageEndDistro('L')}}</span>left</span>
           <span class="tag"><span class="bottleColor">{{percentageEndDistro('B')}}</span>bottle</span>
           <span class="tag"><span class="rightColor">{{percentageEndDistro('R')}}</span>right</span>

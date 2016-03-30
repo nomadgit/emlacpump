@@ -65,7 +65,7 @@ var CounterCtrl = function($scope, $timeout, $ionicPopup) {
   $scope.bottleFeeding = function() {
     $scope.bottleFeedingModel = { volume: 15 }
     var editFeedingPopup = $ionicPopup.show({
-      title: 'Kuantiti Susu Ibu',
+      title: 'Kuantiti Susu Ibu Yang Dipam',
       templateUrl: 'newBottleFeeding.html',
       scope: $scope,
       buttons: [
