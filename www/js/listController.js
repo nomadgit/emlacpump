@@ -153,21 +153,21 @@ var ListCtrl = function($scope, $ionicPopup, $timeout, $filter, $ionicSideMenuDe
                                   editDate: feeding.startTime,
                                   duration: $filter('date')(feeding.duration, 'm'),
                                   supplier: feeding.supplier,
-                                  volume: (feeding.volume) ? feeding.volume/10 : 0};
+                                  volume: (feeding.volume) ? feeding.volume/1 : 0};
 
 
     $scope.editFeedingPopup = $ionicPopup.show({
-      title: 'Edit feeding',
+      title: 'Edit Data',
       templateUrl: 'editFeeding.html',
       scope: $scope,
       buttons: [
-        { text: 'Cancel' },
-        { text: 'Save', 
+        { text: 'Batal' },
+        { text: 'Simpan', 
           onTap: function (e) {
             var reloadDays = $scope.editedFeedingModel.timeChanged && [$scope.editedFeedingOrig.startTime, $scope.editedFeedingModel.startTime]
             $scope.editedFeedingOrig.supplier = $scope.editedFeedingModel.supplier;
             $scope.editedFeedingOrig.duration = parseInt($scope.editedFeedingModel.duration) * 60 * 1000;
-            $scope.editedFeedingOrig.volume   = $scope.editedFeedingModel.volume * 10;
+            $scope.editedFeedingOrig.volume   = $scope.editedFeedingModel.volume * 1.0;
             $scope.editedFeedingOrig.startTime= $scope.editedFeedingModel.startTime;
             $scope.editedFeedingOrig.updatedAt= new Date().getTime();
             storage.storeAndSync($scope.editedFeedingOrig);

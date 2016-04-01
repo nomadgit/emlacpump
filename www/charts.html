@@ -66,12 +66,12 @@
         <div class="chartDescContent">
           <div class="chartDescHead">Hari Ini</div>
           <span class="tag"><span class="quantity leftColor">{{quantityEndDistro('Breast') | number:0}}</span>Masa Susu dipam (min)</span>
-          <span class="tag"><span class="quantity bottleColor">{{quantityEndDistro('Bottle')}}</span>Kuantiti Susu dipam (ml)</span>
+          <span class="tag"><span class="quantity bottleColor">{{quantityEndDistro('Bottle')}}</span>Kuantiti Susu dipam (oz)</span>
         </div>
         <div class="chartDescContent" ng-show="quantityHasDataAtBegin()">
           <div class="chartDescHead">{{quantityTime.name}} lepas</div>
           <span class="tag"><span class="quantity leftColor">{{quantityBeginDistro('Breast') | number:0}}</span>Masa Susu dipam (min)</span>
-          <span class="tag"><span class="quantity bottleColor">{{quantityBeginDistro('Bottle')}}</span>Kuantiti Susu dipam (ml)</span>
+          <span class="tag"><span class="quantity bottleColor">{{quantityBeginDistro('Bottle')}}</span>Kuantiti Susu dipam (oz)</span>
         </div>
 
       </ion-slide>

@@ -13,7 +13,7 @@
       <div class="feeding" ng-click="editFeeding(feeding)" ng-show="feeding.supplier === 'B'">
         <span class="supplier supplierB"><i class="ion-waterdrop"></i></span>
         <div class="feedingInfo">{{feeding.startTime | date:'HH:mm'}}</div>
-        <div class="feedingInfo volume">{{feeding.volume}}ml</div>
+        <div class="feedingInfo volume">{{feeding.volume}}.0oz</div>
       </div>
 
       <div class="feeding" ng-click="editFeeding(feeding)" ng-show="feeding.supplier !== 'B'">
